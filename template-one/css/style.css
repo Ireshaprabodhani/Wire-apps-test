@@ -1,0 +1,97 @@
+:root{
+--font-size-xsm: 1rem;
+--font-size-small: 2rem;
+--font-size-med: 3rem;
+--font-size-large: 5rem;
+--font-size-xlarge: 7rem;
+--font-size-xxlarge: 9rem; 
+
+--clr-primary: #ffffff;
+--clr-secondary: #000000;
+
+--font-primary: "Austin News";
+--font-secondary: "Benton Sans";
+}
+
+html ,  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.cohesan-story-wrapper{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    color: var(--clr-primary);
+    z-index: 2;
+}
+.bg-image{
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.gradient-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6),transparent);
+    z-index: 1;
+}
+.main-content{
+    position: relative;
+    text-align: center;
+    padding: 0 1rem;
+    margin-top: auto;
+    z-index: 2;
+    margin-bottom: 1.5rem;
+}
+
+.template-title{
+    font-family: var(--font-primary);
+    font-size: var(--font-size-large);
+    margin-bottom: 0;
+    letter-spacing: 10px;
+    font-weight: 400;
+}
+
+.address{
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-small);
+    letter-spacing: 2px;
+}
+
+.bottom-logo{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform:translateX(-50%);
+    z-index: 3;
+}
+
+
+.cohen-home-logo{
+    max-width: 120px;
+    margin-top: 2rem;
+}
+
+
+@media (max-width: 768px){
+ .cohen-home-logo {
+    max-width: 180px !important;
+ }
+
+}
+
+
