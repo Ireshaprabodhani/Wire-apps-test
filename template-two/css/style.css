@@ -1,0 +1,100 @@
+:root{
+    --font-size-xsm: 1rem;
+    --font-size-small: 2rem;
+    --font-size-med: 3rem;
+    --font-size-large: 5rem;
+    --font-size-xlarge: 7rem;
+    --font-size-xxlarge: 9rem;
+
+    --font-primary: "Kepler Regular";
+
+    --primary-color:#ff78b5;
+    --secondary-color: #333333; 
+    --clr-bg: #ffffff;
+}
+
+body, .wrapper {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: var(--font-primary);
+}
+
+.wrapper.portrait{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--clr-bg);
+    color: var(--clr-primary);
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+}
+
+.hero-content{
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 0.6rem;
+    padding: 2.5rem 3rem;
+
+}
+
+.title_real_estate{
+    font-size: 1.4rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.post-title {
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.address{
+    font-size: 2.2rem;
+    letter-spacing: 0.04rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.datetime{
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.image-section{
+    position: relative;
+    flex:  1 1 auto;
+}
+
+.image-section::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.15) 45%, rgba(0, 0, 0, 0) 60%);
+    pointer-events: none;
+}
+
+.image-bg{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.post-title.fittext{
+    --min-font-size:2.5rem;
+    --max-font-size:4rem;
+}
+

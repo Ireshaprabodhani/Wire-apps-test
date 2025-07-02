@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Jodie Jakobczak-Open House / Just Listed Post</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ireshaprabodhani/Wire-apps-test/blob/main/template-two/fonts/kepler-regular/kepler-regular.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/gh/Mave-Tech/public-assets/global.template.min.css"
+      rel="stylesheet"/>
+
+    <script src="https://cdn.jsdelivr.net/gh/Mave-Tech/public-assets/js/template-testing.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Mave-Tech/public-assets/js/fittext.min.js"></script>
+
+    <script id="template_manifest" type="application/json">
+        {
+            "title":"Jodie Jakobczak Open House / Just Listed Post",
+            "mave-template-group" : ["Jodie Jakobczak"],
+            "type":"SOCIAL_POST",
+            "reference_images" : []
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <div class="wrapper portrait">
+        <div class="hero-content">
+            <div class="brokerage-section">
+                <h6 
+                    class="title_real_estate"
+                    data-field="title_name"
+                    data-type="string"
+                    data-max="40"
+                    data-description="Name of the brokerage or realtor in uppercase"
+                    >
+                    JODIE JAKOBCZAK REAL ESTATE
+                </h6>
+            </div>
+            <div class="middle-content">
+                <h1 
+                    class="post-title fittext"
+                    data-field="post-title"
+                    data-max="18"
+                    data-description="Either the words OPEN HOUSE or JUST LISTED in title-case"
+                    >
+                    OPEN HOUSE
+                </h1>
+                <h2 
+                    class="address"
+                    data-field="address_line"
+                    data-max="35"
+                    data-description="Suite or unit followed by full street address""
+                    >
+                    SUITE 1000-123 KING STREET W
+                </h2>
+
+                <!-- optional date time field -->
+                <p 
+                  class="datetime"
+                  data-field="open_house_datetime"
+                  data-opional="true"
+                  data-max="30"
+                  data-description="Date range and time for the open house, e.g. APRIL 4-5 |2PM-4PM"
+                >
+                APRIL 4-5 | 2PM-4PM
+                </p>
+
+            </div>
+        </div>
+
+        <div class="image-section">
+            <div 
+                class="image-bg"
+                style="background-image: url('https://images.unsplash.com/photo-1649083048391-1c9e82472f65?q=80&w=1771&auto=format&fit=crop');"
+                data-field="listing_photo"
+                data-type="background-image"
+                data-description="The main listing photo-this fills the entire lower half of the post"
+                >
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
