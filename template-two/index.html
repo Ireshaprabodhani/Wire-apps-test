@@ -23,63 +23,133 @@
 
     </script>
 
+    <style>
+        :root{
+            
+            /* font-family */
+            --font-primary:"Kepler Regular";
+
+            /* font-sizes */
+            --font-size-xsm: 1rem;
+            --font-size-small: 1.6rem;
+            --font-size-med: 2.2rem;
+            --font-size-large: 4rem;
+            --font-size-xlarge: 6.4rem;
+            --font-size-xxlarge: 8.4rem;
+
+            /* template colors */
+            --color-primary:#333333;
+            --color-secondary : #ff78b5;
+        }
+
+         html, body {
+            margin: 0;
+        }
+
+        .wrapper.portrait45{
+            height: 1350px;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .top-section{
+            flex: 0 0 40%;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 3rem 2rem 3rem;
+        }
+
+        .branding-title{
+            font-family: var(--font-primary);
+            font-size: var(--font-size-small);
+            letter-spacing: 0.28rem;
+            color: var(--color-secondary);
+            text-transform: uppercase;
+            margin-bottom: 8rem; 
+        }
+
+        .main-heading{
+           font-family: var(--font-primary);
+            font-size: var(--font-size-xlarge);
+            line-height: 1.1;
+            color: var(--color-secondary);
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;  
+        }
+
+        .post-address,
+        .datetime-content {
+            font-family: var(--font-primary);
+            font-size: var(--font-size-med);
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.14rem;
+        }
+
+        .datetime-line {
+            font-size: var(--font-size-small);
+            margin-top: 0.6rem;
+        }
+
+        .hero {
+            flex: 1 1 auto;
+        }
+
+    </style>
+
 </head>
 <body>
 
-    <div class="wrapper portrait">
-        <div class="hero-content">
-            <div class="brokerage-section">
-                <h6 
-                    class="title_real_estate"
-                    data-field="title_name"
-                    data-type="string"
-                    data-max="40"
-                    data-description="Name of the brokerage or realtor in uppercase"
-                    >
-                    JODIE JAKOBCZAK REAL ESTATE
-                </h6>
-            </div>
-            <div class="middle-content">
-                <h1 
-                    class="post-title fittext"
-                    data-field="post-title"
-                    data-max="18"
-                    data-description="Either the words OPEN HOUSE or JUST LISTED in title-case"
-                    >
-                    OPEN HOUSE
-                </h1>
-                <h2 
-                    class="address"
-                    data-field="address_line"
-                    data-max="35"
-                    data-description="Suite or unit followed by full street address""
-                    >
-                    SUITE 1000-123 KING STREET W
-                </h2>
-
-                <!-- optional date time field -->
-                <p 
-                  class="datetime"
-                  data-field="open_house_datetime"
-                  data-opional="true"
-                  data-max="30"
-                  data-description="Date range and time for the open house, e.g. APRIL 4-5 |2PM-4PM"
+    <div class="wrapper portrait45 square">
+        <div class="top-section">
+           <span class="branding-title"
+                data-field="branding_line"
+                data-max="60"
                 >
-                APRIL 4-5 | 2PM-4PM
-                </p>
+                 JODIE JAKOBCZAK REAL ESTATE
+           </span>
 
-            </div>
+           <h1 
+                class="main-heading fittext"
+                style="--min-font-size:48px; --max-font-size:120px"
+                data-field="post_heading"
+                data-max="18"
+            >
+             OPEN HOUSE
+           </h1>
+
+           <h2 
+                class="post-address"
+                data-field="address_line"
+                data-max="35"
+
+                >
+            SUITE 1000-123 KING STREET W
+           </h2>
+
+           <h3 
+           class="datetime-content"
+           data-field="open_house_datetime"
+           data-max="35"
+           data-opional="true"
+           >
+            APRIL 4-5 | 2PM-4PM
+           </h3>
         </div>
 
-        <div class="image-section">
-            <div 
-                class="image-bg"
-                style="background-image: url('https://images.unsplash.com/photo-1649083048391-1c9e82472f65?q=80&w=1771&auto=format&fit=crop');"
-                data-field="listing_photo"
-                data-type="background-image"
-                data-description="The main listing photo-this fills the entire lower half of the post"
-                >
-            </div>
+        <div 
+            class="hero img full-width"
+            style="background-image: url('https://images.unsplash.com/photo-1649083048391-1c9e82472f65?q=80&w=1771&auto=format&fit=crop');"
+            data-field="hero_image"
+            data-type="background-image"
+            data-description="Main property photo that fills the lower half of the post"
+            >
         </div>
     </div>
     
