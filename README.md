@@ -37,7 +37,7 @@ The logo `Cohen Homes` is supposed to be locally placed in `assets/` folder as `
 ## Assumptions
 
 1. Font Replacement :  
-The initial font has the font named as `"Kepler 3 VF Regular"`, which is an Adobe font and a paid-licensed one. I download font family and host in the GitHub.
+The initial font has the font named as `"Kepler 3 VF Regular"`, which is an Adobe font and a paid-licensed one. I download font family from the other site and host in the GitHub.
 
 2. Mave System: 
 The design of the templates was done manually using the correct Mave-compatible data-field attributes, in the conventional form of a boiler plate in the proprietary system of Mave, which was inaccessible.
@@ -57,9 +57,7 @@ This is an optional field, when the post type is Open House.
 The template has not been constructed with the help of Mave editor or the live template preview tools. The data-field attributes were used to define all editable elements in manner compatible with Mave.
 
 2. Font Substitutions
-Fonts referred to were Adobe Fonts (The seasons and Absolute Beauty). Being not accessible, they were replaced by:
-
-serif instead of Cormorant Garamond and serif instead of The Seasons
+Fonts referred to were Adobe Fonts (The seasons and Absolute Beauty). Being not accessible, So I Download the font family file from the other site for the `"The Season"` host it used Gitgub .  The `"Absolute Beauty"` font  were replaced by:
 
 The cursive version of Great Vibes is used in place of Absolute Beauty
 
