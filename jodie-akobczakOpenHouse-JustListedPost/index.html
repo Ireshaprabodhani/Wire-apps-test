@@ -28,7 +28,7 @@
         :root{
             
             /* font-family */
-            --font-primary: "Playfair Display", serif;
+            --font-primary: "Nunito", sans-serif;
 
             /* font-sizes */
             --font-size-xsm: 1rem;
@@ -84,10 +84,17 @@
             margin-bottom: 1.2rem;  
         }
 
-        .post-address,
+        .post-address{
+           font-family: var(--font-primary);
+           font-size: var(--font-size-med);
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.14rem;
+        }
+
         .datetime-content {
             font-family: var(--font-primary);
-            font-size: var(--font-size-med);
+            font-size: var(--font-size-small);
             color: var(--color-primary);
             text-transform: uppercase;
             letter-spacing: 0.14rem;
@@ -118,7 +125,6 @@
 
            <h1 
                 class="main-heading fittext"
-                style="--min-font-size:48px; --max-font-size:120px"
                 data-field="post_heading"
                 data-max="18"
             >
@@ -126,22 +132,21 @@
            </h1>
 
            <h2 
-                class="post-address"
+                class="post-address fittext"
                 data-field="address_line"
                 data-max="35"
-
                 >
             SUITE 1000-123 KING STREET W
            </h2>
 
-           <h3 
-           class="datetime-content"
+           <h4 
+           class="datetime-content fittext"
            data-field="open_house_datetime"
            data-max="35"
            data-opional="true"
            >
             APRIL 4-5 | 2PM-4PM
-           </h3>
+           </h4>
         </div>
 
         <div 
