@@ -42,11 +42,14 @@
             --color-primary:#333333;
             --color-secondary : #ff78b5;
         }
-
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
          html, body {
             margin: 0;
         }
-
         .wrapper.portrait45{
             height: 1350px;
             display: flex;
@@ -54,7 +57,6 @@
             background-color: #fff;
             overflow: hidden;
         }
-
        .wrapper.portrait45 .top-section{
             flex: 0 0 40%;
             background: #fff;
@@ -65,7 +67,6 @@
             text-align: center;
             padding: 3rem 2rem 3rem;
         }
-
         .wrapper.portrait45 .top-section .branding-title{
             font-family: var(--font-primary);
             font-size: var(--font-size-small);
@@ -74,7 +75,6 @@
             text-transform: uppercase;
             margin-bottom: 8rem; 
         }
-
         .wrapper.portrait45 .top-section .main-heading{
            font-family: var(--font-primary);
             font-size: var(--font-size-xlarge);
@@ -84,7 +84,6 @@
             margin-bottom: 1.2rem;
              font-weight: 400;  
         }
-
         .wrapper.portrait45 .top-section .post-address{
            font-family: var(--font-primary);
            font-size: var(--font-size-med);
@@ -92,7 +91,6 @@
             text-transform: uppercase;
             letter-spacing: 0.14rem;
         }
-
         .wrapper.portrait45 .top-section .datetime-content {
             font-family: var(--font-primary);
             font-size: var(--font-size-small);
@@ -100,16 +98,13 @@
             text-transform: uppercase;
             letter-spacing: 0.14rem;
         }
-
         .datetime-line {
             font-size: var(--font-size-small);
             margin-top: 0.6rem;
         }
-
         .wrapper.portrait45 .top-section .hero {
             flex: 1 1 auto;
         }
-
     </style>
 
 </head>
