@@ -37,7 +37,7 @@ The logo `Cohen Homes` is supposed to be locally placed in `assets/` folder as `
 ## Assumptions
 
 1. Font Replacement :  
-The initial font has the font named as `"Kepler 3 VF Regular"`, which is an Adobe font and a paid-licensed one. Adobe fonts were not available, and therefore the closely resembling free font was utilized, which was `"Playfair Display"`, serif.
+The initial font has the font named as `"Kepler 3 VF Regular"`, which is an Adobe font and a paid-licensed one. I download font family and host in the GitHub.
 
 2. Mave System: 
 The design of the templates was done manually using the correct Mave-compatible data-field attributes, in the conventional form of a boiler plate in the proprietary system of Mave, which was inaccessible.
@@ -49,7 +49,7 @@ The design of the templates was done manually using the correct Mave-compatible 
 This is an optional field, when the post type is Open House.
 
 
-# Template two - Jodie Jakobczak Open House & Just Listed Post 
+# Template three -  FHL Open House Post 
 
 ## Assumptions
 
