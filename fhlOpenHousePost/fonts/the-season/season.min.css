@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "The Season";
+  src: url("https://github.com/Ireshaprabodhani/Wire-apps-test/blob/main/fhlOpenHousePost/fonts/the-season/fonnts.com-The-Seasons-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "The Season";
+  src: url("https://github.com/Ireshaprabodhani/Wire-apps-test/blob/main/fhlOpenHousePost/fonts/the-season/fonnts.com-The-Seasons-.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
