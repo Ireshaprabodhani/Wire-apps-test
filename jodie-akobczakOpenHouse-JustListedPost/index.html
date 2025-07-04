@@ -55,7 +55,7 @@
             overflow: hidden;
         }
 
-        .top-section{
+       .wrapper.portrait45 .top-section{
             flex: 0 0 40%;
             background: #fff;
             display: flex;
@@ -66,7 +66,7 @@
             padding: 3rem 2rem 3rem;
         }
 
-        .branding-title{
+        .wrapper.portrait45 .top-section .branding-title{
             font-family: var(--font-primary);
             font-size: var(--font-size-small);
             letter-spacing: 0.28rem;
@@ -75,16 +75,17 @@
             margin-bottom: 8rem; 
         }
 
-        .main-heading{
+        .wrapper.portrait45 .top-section .main-heading{
            font-family: var(--font-primary);
             font-size: var(--font-size-xlarge);
             line-height: 1.1;
             color: var(--color-secondary);
             text-transform: uppercase;
-            margin-bottom: 1.2rem;  
+            margin-bottom: 1.2rem;
+             font-weight: 400;  
         }
 
-        .post-address{
+        .wrapper.portrait45 .top-section .post-address{
            font-family: var(--font-primary);
            font-size: var(--font-size-med);
             color: var(--color-primary);
@@ -92,7 +93,7 @@
             letter-spacing: 0.14rem;
         }
 
-        .datetime-content {
+        .wrapper.portrait45 .top-section .datetime-content {
             font-family: var(--font-primary);
             font-size: var(--font-size-small);
             color: var(--color-primary);
@@ -105,7 +106,7 @@
             margin-top: 0.6rem;
         }
 
-        .hero {
+        .wrapper.portrait45 .top-section .hero {
             flex: 1 1 auto;
         }
 
@@ -116,17 +117,21 @@
 
     <div class="wrapper portrait45 square">
         <div class="top-section">
-           <span class="branding-title"
+           <div class="branding-title"
                 data-field="branding_line"
                 data-max="60"
+                data-opional="false"
+                data-description="This is represent about the post"
                 >
                  JODIE JAKOBCZAK REAL ESTATE
-           </span>
+            </div>
 
            <h1 
                 class="main-heading fittext"
                 data-field="post_heading"
                 data-max="18"
+                data-opional="false"
+                data-description="The main title of the post"
             >
              OPEN HOUSE
            </h1>
