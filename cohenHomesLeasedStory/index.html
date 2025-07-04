@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cohen Homes Leased Story</title>
+
+
+    <!-- Drive fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Mave-Tech/public-assets/blob/main/fonts/AustinNews.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Mave-Tech/public-assets/blob/main/fonts/BentonSans.css" />
+
+    <!-- global Mave css and js -->
+    <link href="https://cdn.jsdelivr.net/gh/Mave-Tech/public-assets/global.template.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/gh/Mave-Tech/public-assets/js/template-testing.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Mave-Tech/public-assets/js/fittext.min.js"></script>
+
+    <script id="template_manifest" type="application/json">
+      {
+        "title" : "Cohen Homes Leased /  Status Story",
+        "brokerage" : "TemplateTesting",
+        "type" :"SOCIAL_STORY",
+        "reference_images" : []
+      }
+    </script>
+
+    <style>
+       :root {
+
+         /* main colors */
+         --clr-primary : #ffffff;
+         --clr-secondary : #000000;
+
+         /* font families */
+         --font-primary : "Austin News Headline";
+         --font-secondary : "BentonSans";
+
+         /* font sizes */
+         --font-size-status : 6.2rem;
+         --font-size-address : 2.4rem;
+       }
+
+       html,
+       body {
+          width: 100%;
+          height: 100%;
+       }
+
+       *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+       .wrapper.story{
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         color: var(--clr-primary);
+         overflow: hidden;
+       }
+
+        .wrapper.story .bg-image {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+      }
+
+      .wrapper.story .gradient-overlay{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            pointer-events: none;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.8) 0%, 
+            rgba(0, 0, 0, 0.6) 40%,                
+            rgba(0, 0, 0, 0) 100%            
+            );
+      }
+
+      .wrapper.story .main-content{
+        position: relative;
+        z-index: 2;                      
+        width: 100%;
+        padding: 0 2.4rem;
+        text-align: center;
+      }
+
+      .wrapper.story .main-content .template-title{
+        font-family: var(--font-primary);
+        font-size: var(--font-size-status);
+        line-height: 1.1;
+        margin: 0 0 1.2rem;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+      }
+
+      .wrapper.story .main-content .address {
+        font-family: var(--font-secondary);
+        font-size: var(--font-size-address);
+        letter-spacing: 0.1rem;
+        margin: 0;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+
+      }
+
+      .wrapper.story .bottom-logo {
+        position: absolute;
+        bottom: 2rem;                     
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        z-index: 2;
+      }
+
+      .wrapper.story .bottom-logo .cohen-home-logo {
+        width: 200px;
+        height: auto;
+        display: inline-block;
+      }
+
+      
+    </style>
+
+
+
+</head>
+<body>
+    <div class="wrapper cohen-home-story story">
+            <div class="bg-image"
+                    style="background-image: url('https://images.unsplash.com/photo-1649083048391-1c9e82472f65?q=80&w=1771&auto=format&fit=crop');"
+                    data-field="home_property_image"
+                    data-type="background-image"
+                    data-description="The main hero image of the leased property"
+                    data-optional="true"
+                    >
+            </div>
+
+            <div class="gradient-overlay"></div>
+      
+            <div class="main-content">
+                <h2 class="template-title fittext"
+                    data-field="status"
+                    data-min="5"
+                    data-max="10"
+                    data-description="Short property status like 'Leased' or 'Just Sold'"
+                    data-optional="false"
+                    >
+                    Leased
+                </h2>
+
+                <h4 class="address"
+                    data-field="property_address"
+                    data-type="string"
+                    data-min="20"
+                    data-max="35"
+                    data-description="The property address"
+                    data-optional="false"
+                >
+                30 WELLINGTON STREET W #1204
+                </h4>
+            </div>
+
+            <div class="bottom-logo">
+                <img src="./assests/3.png" alt="Cohen Home Logo" class="cohen-home-logo">
+            </div>
+    </div>
+</body>
+</html>
